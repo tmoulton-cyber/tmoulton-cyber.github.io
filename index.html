@@ -1,76 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>IT 3203 Web Development Project</title>
-  <!-- Link to external CSS for consistent styling -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Tyfanna Moulton | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Site header with page title -->
-  <header>
+<header>
+  <div class="container nav">
+    <div class="brand"><span class="dot"></span> Tyfanna Moulton</div>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="writeups.html">Writeups</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </div>
+</header>
 
-    <h1>Web Security Essentials</h1>
-  </header>
+<main class="container">
+  <section class="hero">
+    <div class="hero-card">
+      <img class="profile" src="images/profile.jpg" alt="Tyfanna Moulton headshot"/>
 
-  <!-- Main navigation bar used on all pages -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="encryption.html">Encryption</a>
-    <a href="network.html">Network Security</a>
-    <a href="references.html">References</a>
-    <a href="quiz.html">Quiz</a>
-  </nav>
+      <div>
+        <h1>Cybersecurity Portfolio</h1>
+        <p class="subtitle">
+          Entry-level cybersecurity professional building strong foundations across incident response,
+          digital forensics, and security engineering. This portfolio highlights hands-on labs,
+          coding projects, and clear documentation that demonstrate real-world security skills.
+        </p>
 
-  <main>
-    <!-- Section for summary/introduction -->
-    <section>
-      <h2>Executive Summary</h2>
-       <p>
-    In today's digital world, protecting information on the web is more critical than ever. 
-    This website provides an introductory guide to two essential components of web security: 
-    encryption and network protection. It is designed to help readers understand how data is 
-    secured through cryptographic techniques and how networks are defended against unauthorized 
-    access and attacks. The content is part of a class project for IT 3203 at Kennesaw State University 
-    and aims to build foundational knowledge in modern web security practices.
-  </p>
-</section>
+        <div class="badges">
+          <span class="badge">Incident Response</span>
+          <span class="badge">Digital Forensics</span>
+          <span class="badge">Security Engineering</span>
+          <span class="badge">Network Security</span>
+          <span class="badge">Python</span>
+        </div>
 
+        <div class="cta">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn secondary" href="writeups.html">Read Writeups</a>
+          <a class="btn secondary" href="resume.html">Resume / Contact</a>
+        </div>
 
-<!-- Key terms presented as a list -->
-<section>
-  <h2>Key Terms</h2>
-  <ul>
-    <li>Encryption</li>
-    <li>Firewall</li>
-    <li>Symmetric Encryption</li>
-    <li>Asymmetric Encryption</li>
-    <li>VPN</li>
-    <li>Intrusion Detection System (IDS)</li>
-    <li>HTTPS</li>
-    <li>Public Key</li>
-    <li>Private Key</li>
-    <li>Antivirus</li>
-  </ul>
-</section>
+        <div class="kv">
+          <div>Current Focus</div>
+          <div>Strong security foundations with exposure to IR, DFIR, and security engineering</div>
 
-     <!-- Table of contents with links to topic pages -->
-    <section>
-      <h2>Table of Contents</h2>
-      <ul>
-        <li><a href="encryption.html">Encryption</a></li>
-        <li><a href="network.html">Network Security</a></li>
-        <li><a href="references.html">References and Resources</a></li>
-        <li><a href="quiz.html">Self-Assessment Quiz</a></li>
-      </ul>
-    </section>
-  </main>
+          <div>Career Direction</div>
+          <div>Exploring specialization while preparing for entry-level cybersecurity roles</div>
 
-  <!-- Class project notice in footer -->
-  <footer>
-    <p>This is a class project for IT 3203. Visit the course site: 
-      <a href="https://ksuweb.github.io/IT3203/" target="_blank">https://ksuweb.github.io/IT3203/</a>
+          <div>Strengths</div>
+          <div>Hands-on labs, structured analysis, and clear technical communication</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>What you’ll find here</h2>
+    <p class="lead">
+      This site provides an overview of my technical foundations and shows how I apply security
+      concepts through real work.
     </p>
-  </footer>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Skills</h3>
+        <p>Clear descriptions of my core strengths, written for both technical and non-technical audiences.</p>
+      </div>
+      <div class="card">
+        <h3>Projects</h3>
+        <p>Hands-on labs and coding projects presented in a case-study format.</p>
+      </div>
+      <div class="card">
+        <h3>Writeups</h3>
+        <p>Short posts explaining what I learned, how I approached problems, and why it matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Featured Project</h2>
+    <div class="panel">
+      <h3>Ethical Hacking Term Project — AES Analysis & Decryption Workflow</h3>
+      <p class="lead">
+        Built a milestone-based workflow to identify an AES encryption key, decrypt a protected
+        message, and interpret the recovered plaintext.
+      </p>
+      <ul class="list">
+        <li>Structured the work into four milestones with validation at each step</li>
+        <li>Applied cryptography fundamentals and verification techniques</li>
+        <li>Produced clear documentation of methods and results</li>
+      </ul>
+      <p class="small">
+        This project demonstrates structured security analysis skills applicable across multiple
+        cybersecurity domains.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div>© 2025 Tyfanna Moulton • <a href="resume.html">Contact</a></div>
+  </div>
+</footer>
 </body>
 </html>
