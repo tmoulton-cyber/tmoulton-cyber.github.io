@@ -1,115 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Network Security</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Projects | Tyfanna Moulton</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <h1>Network Security</h1>
-  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="encryption.html">Encryption</a>
-    <a href="network.html">Network Security</a>
-    <a href="references.html">References</a>
-    <a href="quiz.html">Quiz</a>
-  </nav>
+<header>
+  <div class="container nav">
+    <div class="brand"><span class="dot"></span> Tyfanna Moulton</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="active" href="projects.html">Projects</a></li>
+      <li><a href="labs.html">Labs</a></li>
+      <li><a href="writeups.html">Writeups</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </div>
+</header>
 
-  <main>
-    <!-- Overview of network security -->
-    <section>
-      <p>Network security involves protecting data and systems from unauthorized access, disruptions, or misuse. It uses both hardware and software solutions to maintain secure and reliable communication.</p>
-    </section>
+<main class="container">
 
-    <!-- Threats -->
-    <section>
-      <h2>Common Network Threats</h2>
-      <ul>
-        <li><strong>Malware:</strong> Malicious software like viruses, ransomware, and worms that can disrupt or damage systems.</li>
-        <li><strong>Phishing:</strong> Deceptive attempts to trick users into revealing personal or financial information.</li>
-        <li><strong>Man-in-the-Middle (MitM) Attacks:</strong> Intercepting communication between users and services.</li>
-        <li><strong>DDoS Attacks:</strong> Overwhelming network resources with traffic to disrupt service availability.</li>
-        <li><strong>Unauthorized Access:</strong> Hackers gaining access to systems or networks without permission.</li>
-      </ul>
-    </section>
-    
-    <!-- Network Security Measures -->
-    <section>
-      <h2>Common Network Security Measures</h2>
-      <ol>
-        <li><strong>Firewalls:</strong><br>
-          Act as a barrier between trusted internal networks and untrusted external networks. They filter traffic based on security rules to block unauthorized access.
-        </li>
-        <li><strong>Antivirus:</strong><br>
-          Scans and removes malicious software such as viruses and worms. Provides real-time protection and threat detection for endpoints.
-        </li>
-        <li><strong>Intrusion Detection Systems (IDS):</strong><br>
-          Monitors systems and network traffic to detect suspicious activity or policy violations, alerting administrators to potential threats.
-        </li>
-        <li><strong>Virtual Private Network (VPN):</strong><br>
-          Encrypts user internet traffic and routes it through a secure server, ensuring privacy and safe remote access.
-        </li>
-      </ol>
-    </section>
+<section class="section">
+  <h2>Projects</h2>
+  <p class="lead">
+    These projects represent larger, in-depth efforts that demonstrate structured
+    problem-solving, security fundamentals, and clear documentation.
+  </p>
+</section>
 
-    <!-- Firewall types -->
-    <section>
-      <h2>Firewall Types</h2>
-      <table>
-        <tr>
-          <th>Type</th>
-          <th>Description</th>
-        </tr>
-        <tr>
-          <td>Packet Filtering Firewall</td>
-          <td>Examines packets and blocks them based on source/destination IP addresses, ports, or protocols.</td>
-        </tr>
-        <tr>
-          <td>Stateful Inspection Firewall</td>
-          <td>Tracks active connections and filters packets based on the context and state of the traffic.</td>
-        </tr>
-        <tr>
-          <td>Proxy Firewall</td>
-          <td>Acts as an intermediary, filtering traffic at the application layer for added protection.</td>
-        </tr>
-        <tr>
-          <td>Next-Generation Firewall (NGFW)</td>
-          <td>Includes advanced features like deep packet inspection, intrusion prevention, and application-level monitoring.</td>
-        </tr>
-      </table>
-    </section>
+<!-- AES PROJECT -->
+<section class="section" id="aes">
+  <h3>Ethical Hacking Project — AES Analysis & Decryption Workflow</h3>
 
-    <!-- Best Practices -->
-    <section>
-      <h2>Best Practices for Securing Networks</h2>
-      <ul>
-        <li>Implement strong password policies and multi-factor authentication.</li>
-        <li>Segment networks to isolate traffic and limit access.</li>
-        <li>Train users to recognize phishing and social engineering attacks.</li>
-        <li>Use endpoint protection across all connected devices.</li>
-        <li>Maintain regular backups and disaster recovery plans.</li>
-      </ul>
-    </section>
-
-    <!-- Diagram -->
-    <section>
-      <h2>Visual Diagram: Types of Firewalls</h2>
-      <img src="images/types-of-firewalls.webp" alt="Types of Firewalls" width="500">
-    </section>
-
-    <!-- Conclusion -->
-    <section>
-      <p>Network security is essential in protecting modern digital infrastructure. Understanding threats, implementing protective technologies, and following best practices are key to maintaining a secure and resilient environment.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>This is a class project for IT 3203. Visit the course site: 
-      <a href="https://ksuweb.github.io/IT3203/" target="_blank">https://ksuweb.github.io/IT3203/</a>
+  <div class="panel">
+    <p class="lead">
+      Built a milestone-based workflow to identify an AES-256 encryption key, decrypt
+      protected data, and validate the recovered plaintext.
     </p>
-  </footer>
+
+    <ul class="list">
+      <li>Organized work into four milestones with measurable outcomes</li>
+      <li>Applied cryptography fundamentals and validation techniques</li>
+      <li>Automated decryption and integrity verification using Python</li>
+    </ul>
+
+    <a class="btn secondary"
+       href="https://github.com/tmoulton-cyber/aes-analysis-project"
+       target="_blank" rel="noopener">
+      View GitHub Repository
+    </a>
+
+    <p class="small">
+      Educational project demonstrating cryptographic analysis and secure workflows.
+    </p>
+  </div>
+</section>
+
+<!-- BUFFER OVERFLOW PROJECT -->
+<section class="section" id="buffer-overflow">
+  <h3>Buffer Overflow Lab — Memory Safety Analysis</h3>
+
+  <div class="panel">
+    <p class="lead">
+      Explored how improper bounds checking in C programs can lead to memory safety
+      vulnerabilities.
+    </p>
+
+    <ul class="list">
+      <li>Developed a vulnerable program in a controlled academic environment</li>
+      <li>Analyzed stack behavior and fixed-size buffer risks</li>
+      <li>Discussed secure coding practices and mitigations</li>
+    </ul>
+
+    <a class="btn secondary"
+       href="https://github.com/tmoulton-cyber/buffer-overflow-lab"
+       target="_blank" rel="noopener">
+      View GitHub Repository
+    </a>
+
+    <p class="small">
+      Presented strictly for educational purposes — no real-world exploitation.
+    </p>
+  </div>
+</section>
+
+<!-- SQL PROJECT -->
+<section class="section" id="sql">
+  <h3>Database Systems Project — SQL Design & Querying</h3>
+
+  <div class="panel">
+    <p class="lead">
+      Designed and queried a normalized relational database using SQL to model a
+      healthcare-style system.
+    </p>
+
+    <ul class="list">
+      <li>Created normalized schemas with primary and foreign keys</li>
+      <li>Inserted and validated relational data</li>
+      <li>Wrote analytical SQL queries using joins and aggregates</li>
+    </ul>
+
+    <a class="btn secondary"
+       href="https://github.com/tmoulton-cyber/sql-database-systems-project"
+       target="_blank" rel="noopener">
+      View GitHub Repository
+    </a>
+
+    <p class="small">
+      Demonstrates SQL fundamentals relevant to security analytics and audit workflows.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div>© 2025 Tyfanna Moulton</div>
+  </div>
+</footer>
+
 </body>
 </html>
