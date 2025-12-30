@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
 <header>
   <div class="container nav">
     <div class="brand"><span class="dot"></span> Tyfanna Moulton</div>
@@ -22,16 +23,18 @@
 </header>
 
 <main class="container">
+
+  <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-card">
-      <img class="profile" src="images/Moulton_Tyfanna_323-0731 Low Resolution -Retouched.jpg" alt="Tyfanna Moulton headshot"/>
+      <!-- Update filename if needed -->
+      <img class="profile" src="images/profile.jpg" alt="Tyfanna Moulton headshot"/>
 
       <div>
         <h1>Cybersecurity Portfolio</h1>
         <p class="subtitle">
-          Entry-level cybersecurity professional building strong foundations across incident response,
-          digital forensics, and security engineering. This portfolio highlights hands-on labs,
-          coding projects, and clear documentation that demonstrate real-world security skills.
+          Entry-level cybersecurity professional building strong foundations while exploring
+          specialization in incident response, digital forensics, and security engineering.
         </p>
 
         <div class="badges">
@@ -39,77 +42,104 @@
           <span class="badge">Digital Forensics</span>
           <span class="badge">Security Engineering</span>
           <span class="badge">Network Security</span>
+          <span class="badge">SQL</span>
           <span class="badge">Python</span>
         </div>
 
         <div class="cta">
           <a class="btn" href="projects.html">View Projects</a>
-          <a class="btn secondary" href="writeups.html">Read Writeups</a>
+          <a class="btn secondary" href="labs.html">View Labs</a>
           <a class="btn secondary" href="resume.html">Resume / Contact</a>
         </div>
 
         <div class="kv">
           <div>Current Focus</div>
-          <div>Strong security foundations with exposure to IR, DFIR, and security engineering</div>
+          <div>Foundational cybersecurity skills with hands-on projects and labs</div>
 
           <div>Career Direction</div>
-          <div>Exploring specialization while preparing for entry-level cybersecurity roles</div>
+          <div>Preparing for entry-level cybersecurity roles while exploring specialization</div>
 
           <div>Strengths</div>
-          <div>Hands-on labs, structured analysis, and clear technical communication</div>
+          <div>Structured analysis, documentation, and ethical security practices</div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- OVERVIEW -->
   <section class="section">
-    <h2>What you’ll find here</h2>
+    <h2>About This Portfolio</h2>
     <p class="lead">
-      This site provides an overview of my technical foundations and shows how I apply security
-      concepts through real work.
+      This portfolio is designed to be simple, clear, and professional. It highlights both
+      in-depth projects and hands-on labs to demonstrate real cybersecurity skills and
+      a strong technical foundation.
     </p>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="section">
+    <h2>What You’ll Find Here</h2>
 
     <div class="grid">
       <div class="card">
-        <h3>Skills</h3>
-        <p>Clear descriptions of my core strengths, written for both technical and non-technical audiences.</p>
-      </div>
-      <div class="card">
         <h3>Projects</h3>
-        <p>Hands-on labs and coding projects presented in a case-study format.</p>
+        <p>
+          Larger, in-depth efforts that demonstrate structured problem-solving,
+          security fundamentals, and code ownership.
+        </p>
+        <a href="projects.html">Explore Projects →</a>
       </div>
+
+      <div class="card">
+        <h3>Labs</h3>
+        <p>
+          Hands-on coursework across forensics, networking, operating systems,
+          and database systems.
+        </p>
+        <a href="labs.html">Explore Labs →</a>
+      </div>
+
       <div class="card">
         <h3>Writeups</h3>
-        <p>Short posts explaining what I learned, how I approached problems, and why it matters.</p>
+        <p>
+          Short explanations of lessons learned, security concepts,
+          and practical takeaways from labs and projects.
+        </p>
+        <a href="writeups.html">Read Writeups →</a>
       </div>
     </div>
   </section>
 
+  <!-- FEATURED PROJECT -->
   <section class="section">
     <h2>Featured Project</h2>
+
     <div class="panel">
-      <h3>Ethical Hacking Project — AES Analysis & Decryption Workflow</h3>
+      <h3>AES Analysis & Decryption Workflow</h3>
       <p class="lead">
-        Built a milestone-based workflow to identify an AES encryption key, decrypt a protected
-        message, and interpret the recovered plaintext.
+        A milestone-based ethical hacking project that demonstrates cryptographic
+        analysis, automation, and verification techniques.
       </p>
+
       <ul class="list">
-        <li>Structured the work into four milestones with validation at each step</li>
-        <li>Applied cryptography fundamentals and verification techniques</li>
-        <li>Produced clear documentation of methods and results</li>
+        <li>Structured work into four milestones with validation steps</li>
+        <li>Applied AES-256 cryptography fundamentals</li>
+        <li>Automated decryption and integrity verification</li>
       </ul>
-      <p class="small">
-        This project demonstrates structured security analysis skills applicable across multiple
-        cybersecurity domains.
-      </p>
+
+      <a class="btn secondary" href="projects.html#aes">
+        View Project Details
+      </a>
     </div>
   </section>
+
 </main>
 
 <footer>
   <div class="container">
-    <div>© 2025 Tyfanna Moulton • <a href="resume.html">Contact</a></div>
+    <div>© 2025 Tyfanna Moulton</div>
   </div>
 </footer>
+
 </body>
 </html>
