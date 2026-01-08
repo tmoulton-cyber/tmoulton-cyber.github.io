@@ -179,3 +179,154 @@ footer{
   .split{grid-template-columns: 1fr}
   .kv{grid-template-columns: 1fr}
 }
+
+/* =============== */
+/* Responsive Base */
+/* =============== */
+
+* { box-sizing: border-box; }
+
+img { max-width: 100%; height: auto; }
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+/* Make long links/text wrap instead of overflowing */
+p, li, a, div {
+  overflow-wrap: anywhere;
+}
+
+/* =============== */
+/* Navigation       */
+/* =============== */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.nav ul {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.nav a {
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* =============== */
+/* Hero / Layout    */
+/* =============== */
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.profile {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* =============== */
+/* Grids            */
+/* =============== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card, .panel {
+  border-radius: 16px;
+}
+
+/* Keep buttons from squeezing weirdly */
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+/* Key/Value section in hero */
+.kv {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 10px 16px;
+}
+
+/* Lists */
+.list {
+  margin: 10px 0 0;
+}
+
+/* ===================================== */
+/* Responsive Breakpoints (the big win)  */
+/* ===================================== */
+
+/* Tablets and smaller laptops */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-card {
+    grid-template-columns: 180px 1fr;
+  }
+
+  .profile {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Phones */
+@media (max-width: 640px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero-card {
+    grid-template-columns: 1fr; /* stack image + text */
+  }
+
+  .profile {
+    width: 140px;
+    height: 140px;
+    border-radius: 14px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* single-column cards */
+  }
+
+  .kv {
+    grid-template-columns: 1fr; /* stack key/value */
+  }
+}
+
