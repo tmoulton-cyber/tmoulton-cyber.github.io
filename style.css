@@ -118,7 +118,21 @@ h1{margin:0 0 8px; font-size:34px; line-height:1.15}
 }
 .btn.secondary:hover{background: rgba(255,255,255,.06)}
 
-.section{padding:22px 0}
+.section{
+
+  padding:22px 0;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+
+}
+
+.section:last-of-type{
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .section h2{margin:0 0 10px; font-size:22px}
 .section p.lead{margin:0 0 14px; color:var(--muted); max-width:85ch}
 
@@ -254,6 +268,12 @@ p, li, a, div {
   gap: 16px;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
 .card, .panel {
   border-radius: 16px;
 }
@@ -328,5 +348,7 @@ p, li, a, div {
   .kv {
     grid-template-columns: 1fr; /* stack key/value */
   }
+
+
 }
 
